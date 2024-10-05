@@ -92,7 +92,11 @@
   window.addEventListener('click', function () {
     var audio = document.getElementById("song");
     audio.play();
-    
+    navigator.vibrate([50, 200, 50, 200, 50, 200, 50, 200, 100, 300, 100, 300, 100, 300, 100, 300]);
+    setInterval(function () {
+      navigator.vibrate([50, 200, 50, 200, 50, 200, 50, 200, 100, 300, 100, 300, 100, 300, 100, 300]);
+    }, 2000);
+ 
   });
   
 </script>
